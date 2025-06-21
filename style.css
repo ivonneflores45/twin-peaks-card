@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --backgroundSize: 100%;
+}
+body {
+  background-image: URL(https://t4.ftcdn.net/jpg/02/14/03/49/360_F_214034937_bZdNblrq2X4gLpGrG2XHoT7rNsmhXIsz.jpg);
+  background-size: 600px;
+  background-repeat: repeat;
+  background-position: 0 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  animation: movingBackground 20s linear infinite;
+}
+
+.container {
+  background-color: white;
+  height: 400px;
+  width: 700px;
+  margin-top: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
+}
+.header {
+  height: 75%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1508778552286-12d4c6007799?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwY3VydGFpbnxlbnwwfHwwfHx8MA%3D%3D);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgb(99, 5, 5), transparent);
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  text-align: center;
+  padding-top: 10px;
+}
+.credits {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.created {
+  flex: 1;
+}
+.creators {
+  font-style: italic;
+}
+
+p {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.paragraph {
+  padding: 40px;
+  padding-top: 20px;
+}
+
+@keyframes movingBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 600px 600px;
+  }
+}
