@@ -88,6 +88,10 @@ p {
   .creators {
     font-size: 10px;
   }
+  .credits {
+    flex-direction: column;
+    text-align: center;
+  }
   .paragraph {
     padding-left: 10px;
     padding-right: 10px;
