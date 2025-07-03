@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   height: 100vh;
   animation: movingBackground 20s linear infinite;
 }
@@ -72,5 +73,23 @@ p {
   }
   to {
     background-position: 600px 600px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 300px;
+  }
+  .title {
+    font-size: 45px;
+  }
+  .paragraph,
+  .created,
+  .creators {
+    font-size: 10px;
+  }
+  .paragraph {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
